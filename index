@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>FAQ - CasualMITEC</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Open Sans', sans-serif;
+      background-color: #f5f5f5;
+      color: #333;
+      padding: 40px;
+    }
+    .faq-container {
+      max-width: 800px;
+      margin: auto;
+    }
+    .faq-item {
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 15px;
+      margin-bottom: 15px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    }
+    .faq-question {
+      padding: 20px;
+      cursor: pointer;
+      font-weight: bold;
+      position: relative;
+    }
+    .faq-answer {
+      padding: 0 20px 20px 20px;
+      display: none;
+      line-height: 1.6;
+    }
+    .faq-item.active .faq-answer {
+      display: block;
+    }
+    .faq-item.active .faq-question::after {
+      content: "-";
+      position: absolute;
+      right: 20px;
+    }
+    .faq-question::after {
+      content: "+";
+      position: absolute;
+      right: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="faq-container">
+  
+    <div class="faq-item">
+      <div class="faq-question">What is the minimum age requirement to work at MITEC?</div>
+      <div class="faq-answer">Only individuals aged 17 and above are allowed to work as casual labor at MITEC.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">Can I edit my personal details after registration?</div>
+      <div class="faq-answer">Yes, you are encouraged to do so especially when you have some personal information changes. </div>
+    </div>
+
+
+<div class="faq-item">
+  <div class="faq-question">How will I receive my payment?</div>
+  <div class="faq-answer">
+    Payments will only be made through bank transfer under your own name and account. 
+    If you currently don't hold any bank account, you can use any third party bank account once you have submitted a 
+    <a href="https://www.casualmitec.online/forms/consent-form-third-party-account" target="_blank" style="color:#007BFF; text-decoration:underline;">
+      consent letter
+    </a>.
+  </div>
+</div>
+
+
+    <div class="faq-item">
+      <div class="faq-question">What happens if I’m late or absent without notice?</div>
+      <div class="faq-answer">Any lateness more than 5 minutes (calculated from the timestamps captured during the sign-in proses via the system, a deduction of 1 hour from the total working hours on that particular day will be Imposed. On the other hand, no-shows without valid reasons may be resulting a temporal barred from future work opportunities.
+</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">Can I work at MITEC if I am a foreigner?</div>
+      <div class="faq-answer"> Only International student with a valid visa are allowed to work, you must comply with Malaysia’s immigration laws and provide proper documentation for part-time work. Make sure you work for no longer than 20 hours per week. </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">What should I wear to work?</div>
+      <div class="faq-answer">Appropriate attire depends on the task. Always follow the department’s dress code – no slippers, shorts, or crop tops unless specified.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">How do I know when I will get paid?</div>
+      <div class="faq-answer">Your Payment date will be determined from the day you submitted your voucher. The voucher payout day for the time being are every Tuesday, Wednesday and Friday every week. You can check your specific date of each voucher you submitted from the 
+        <a href="https://www.casualmitec.online/my-record" target="_blank"  style="color:#007BFF; text-decoration:underline;">
+        portal. </a>
+         </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question"> What should i do if I've lost my voucher</div>
+      <div class="faq-answer">You must fill up the <a href="https://www.casualmitec.online/forms/replacement-voucher-form" target="_blank"  style="color:#007BFF; text-decoration:underline;">
+      form</a>. You must get the verification from your supervisor, similar process as you were getting the verification for your voucher everytime you have finished your work.
+           </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">What is the policy on breaks and meals?</div>
+      <div class="faq-answer">Breaks depend on task length and department rules. A meal will be provided for every shift you work. If you work longer than 12 hours, you are entitle to have one more meals.</div>
+    </div>
+  </div>
+
+  <script>
+    document.querySelectorAll('.faq-question').forEach(item => {
+      item.addEventListener('click', () => {
+        const parent = item.parentElement;
+        parent.classList.toggle('active');
+      });
+    });
+  </script>
+</body>
+</html>
